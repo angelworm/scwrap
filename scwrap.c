@@ -138,7 +138,7 @@ void set_proxy(CFArrayRef proxyList) {
     }
 }
 
-CFStringRef get_proxy(CFStringRef reach_serv) {
+void get_proxy(CFStringRef reach_serv) {
     CFDictionaryRef pset = CFNetworkCopySystemProxySettings();
     CFURLRef reach_serv_url = CFURLCreateWithString(kCFAllocatorDefault,
                                                     reach_serv,
